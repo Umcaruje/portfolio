@@ -25,7 +25,7 @@ content:
             options:
               values: [Long-form, Short-form]
           - {name: role, label: Your role, type: string}
-          - {name: videoUrl, label: YouTube or Vimeo link, type: string}
+          - {name: videoUrl, label: YouTube / Vimeo / Instagram link, type: string}
           - name: thumbnail
             label: Custom thumbnail
             description: Leave empty to use the YouTube thumbnail automatically.
@@ -68,7 +68,7 @@ content:
             options:
               values: [VFX, Cleanup, Motion]
           - {name: role, label: Your role, type: string}
-          - {name: videoUrl, label: YouTube or Vimeo link, type: string}
+          - {name: videoUrl, label: YouTube / Vimeo / Instagram link, type: string}
           - name: thumbnail
             label: Custom thumbnail
             description: Leave empty to use the YouTube thumbnail automatically.
@@ -113,7 +113,7 @@ content:
             options:
               values: [Composition, Production]
           - {name: role, label: Your role, type: string}
-          - {name: videoUrl, label: YouTube or Vimeo link, type: string}
+          - {name: videoUrl, label: YouTube / Vimeo / Instagram link, type: string}
           - name: thumbnail
             label: Custom thumbnail
             description: Leave empty to use the YouTube thumbnail automatically.
@@ -156,7 +156,7 @@ content:
             options:
               values: [Showreel, Film]
           - {name: role, label: Your role, type: string}
-          - {name: videoUrl, label: YouTube or Vimeo link, type: string}
+          - {name: videoUrl, label: YouTube / Vimeo / Instagram link, type: string}
           - name: thumbnail
             label: Custom thumbnail
             description: Leave empty to use the YouTube thumbnail automatically.
