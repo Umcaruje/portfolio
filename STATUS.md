@@ -11,6 +11,8 @@
 - Pages CMS ima zaseban meni za svaku od cetiri sekcije.
 - YouTube naslovnica se prikazuje automatski kada nema rucno zadate slike.
 
+- Format i status su uklonjeni iz prikaza detalja projekta.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
