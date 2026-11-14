@@ -72,3 +72,18 @@ dialog{overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-w
 
 /* Preserve the waveform angle while applying the tile hover zoom. */
 .tile-music:hover .art-music,.tile-music:focus-visible .art-music{transform:rotate(-12deg) scale(1.045)}
+
+.modal-media-instagram {
+  aspect-ratio: auto;
+  padding: 16px;
+}
+.modal-media-instagram iframe {
+  width: min(100%, 420px);
+  height: clamp(450px, 78dvh, 710px);
+  background: #fff;
+}
+.modal-media-instagram a {
+  color: #fff;
+  font-size: 13px;
+  text-decoration: underline;
+}
