@@ -40,6 +40,8 @@
 
 - Novi projekti dobijaju slug iz naslova uz nastavak za duplikate. Postojeci ID-jevi se koriste za stare linkove.
 
+- Javni Instagram Reelovi i objave mogu da se otvore u projektu, uz direktan link do Instagrama.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
