@@ -19,6 +19,7 @@ content:
           - {name: title, label: Project title, type: string, required: true}
           - {name: id, label: Project link slug (unique across the portfolio), type: string, required: true}
           - name: format
+            hidden: true
             label: Format
             type: select
             options:
@@ -30,15 +31,17 @@ content:
             description: Leave empty to use the YouTube thumbnail automatically.
             type: image
           - {name: description, type: text}
-          - {name: credits, type: text}
-          - {name: placeholder, label: Mark as preview placeholder, type: boolean}
-          - {name: coverText, label: Cover text when no thumbnail is available, type: string}
+          - {name: credits, hidden: true, type: text}
+          - {name: placeholder, hidden: true, label: Mark as preview placeholder, type: boolean}
+          - {name: coverText, hidden: true, label: Cover text when no thumbnail is available, type: string}
           - name: theme
+            hidden: true
             label: Cover color when no thumbnail is available
             type: select
             options:
               values: [neutral, blue, dark, lilac]
           - name: images
+            hidden: true
             label: Breakdown images
             type: image
             list: true
@@ -59,6 +62,7 @@ content:
           - {name: title, label: Project title, type: string, required: true}
           - {name: id, label: Project link slug (unique across the portfolio), type: string, required: true}
           - name: format
+            hidden: true
             label: Format
             type: select
             options:
@@ -70,16 +74,18 @@ content:
             description: Leave empty to use the YouTube thumbnail automatically.
             type: image
           - {name: description, type: text}
-          - {name: credits, type: text}
+          - {name: credits, hidden: true, type: text}
           - {name: featured, label: Show in the showreel section, type: boolean}
-          - {name: placeholder, label: Mark as preview placeholder, type: boolean}
-          - {name: coverText, label: Cover text when no thumbnail is available, type: string}
+          - {name: placeholder, hidden: true, label: Mark as preview placeholder, type: boolean}
+          - {name: coverText, hidden: true, label: Cover text when no thumbnail is available, type: string}
           - name: theme
+            hidden: true
             label: Cover color when no thumbnail is available
             type: select
             options:
               values: [neutral, blue, dark, lilac]
           - name: images
+            hidden: true
             label: Breakdown images
             type: image
             list: true
@@ -101,6 +107,7 @@ content:
           - {name: title, label: Project title, type: string, required: true}
           - {name: id, label: Project link slug (unique across the portfolio), type: string, required: true}
           - name: format
+            hidden: true
             label: Format
             type: select
             options:
@@ -112,15 +119,17 @@ content:
             description: Leave empty to use the YouTube thumbnail automatically.
             type: image
           - {name: description, type: text}
-          - {name: credits, type: text}
-          - {name: placeholder, label: Mark as preview placeholder, type: boolean}
-          - {name: coverText, label: Cover text when no thumbnail is available, type: string}
+          - {name: credits, hidden: true, type: text}
+          - {name: placeholder, hidden: true, label: Mark as preview placeholder, type: boolean}
+          - {name: coverText, hidden: true, label: Cover text when no thumbnail is available, type: string}
           - name: theme
+            hidden: true
             label: Cover color when no thumbnail is available
             type: select
             options:
               values: [neutral, blue, dark, lilac]
           - name: images
+            hidden: true
             label: Breakdown images
             type: image
             list: true
@@ -141,6 +150,7 @@ content:
           - {name: title, label: Project title, type: string, required: true}
           - {name: id, label: Project link slug (unique across the portfolio), type: string, required: true}
           - name: format
+            hidden: true
             label: Format
             type: select
             options:
@@ -152,16 +162,18 @@ content:
             description: Leave empty to use the YouTube thumbnail automatically.
             type: image
           - {name: description, type: text}
-          - {name: credits, type: text}
+          - {name: credits, hidden: true, type: text}
           - {name: featured, label: Show in the showreel section, type: boolean}
-          - {name: placeholder, label: Mark as preview placeholder, type: boolean}
-          - {name: coverText, label: Cover text when no thumbnail is available, type: string}
+          - {name: placeholder, hidden: true, label: Mark as preview placeholder, type: boolean}
+          - {name: coverText, hidden: true, label: Cover text when no thumbnail is available, type: string}
           - name: theme
+            hidden: true
             label: Cover color when no thumbnail is available
             type: select
             options:
               values: [neutral, blue, dark, lilac]
           - name: images
+            hidden: true
             label: Breakdown images
             type: image
             list: true
