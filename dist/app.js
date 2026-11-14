@@ -28,26 +28,37 @@ function embedUrl(value) {
   } catch {}
   return null;
 }
-function projectThumbnail(project) {
+function projectThumbnail(project, quality = 'maxresdefault') {
   const custom = validAsset(project.thumbnail);
   if (custom) return custom;
   try {
     const id = youtubeId(new URL(project.videoUrl));
-    return id ? 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg' : '';
+    return id ? 'https://i.ytimg.com/vi/' + id + '/' + quality + '.jpg' : '';
   } catch {
     return '';
   }
 }
-main.addEventListener('error', event => {
-  const image = event.target;
-  if (image.matches('.thumbnail > img')) {
-    image.nextElementSibling.replaceWith(image.nextElementSibling.content);
-    image.remove();
+function useThumbnailFallback(image) {
+  const fallback = image.dataset.fallback;
+  if (fallback) {
+    delete image.dataset.fallback;
+    image.src = fallback;
+    return;
+  }
+  image.nextElementSibling.replaceWith(image.nextElementSibling.content);
+  image.remove();
+}
+main.addEventListener('error', ({ target: image }) => {
+  if (image.matches('.thumbnail > img')) useThumbnailFallback(image);
+}, true);
+main.addEventListener('load', ({ target: image }) => {
+  if (image.matches('.thumbnail > img[data-fallback]') && image.naturalWidth <= 120) {
+    useThumbnailFallback(image);
   }
 }, true);
 function artwork(key){return `<div class="art art-${sections[key].theme}" aria-hidden="true">${key==='music'?Array.from({length:43},(_,i)=>`<i style="height:${25+Math.abs(Math.sin(i*2.2))*145}px"></i>`).join(''):''}</div>`}
 function home(){return `<section class="intro"><div><p class="eyebrow">umcaruje / Independent creative</p><h1>Uroš Maravić</h1></div><p class="intro-copy">VIDEO EDITOR<br>VFX ARTIST<br>MUSIC PRODUCER</p></section><section class="quadrants" aria-label="Explore work">${Object.entries(sections).map(([k,s])=>`<a class="tile tile-${s.theme}" href="#${k}">${artwork(k)}<div class="tile-label"><span>EXPLORE <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></div><div class="tile-bottom"><div><h2>${s.name}</h2><p>${s.subtitle}</p></div><span class="arrow" aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></div></a>`).join('')}</section>`}
-function card(p){const img=projectThumbnail(p);return `<button class="project-card" data-project="${esc(p.id)}" aria-label="Open ${esc(p.title)}"><div class="thumbnail theme-${esc(p.theme||'neutral')}">${img?`<img src="${esc(img)}" alt="${esc(p.title)}" loading="lazy">`:''}${img?'<template>':''}<span class="draft-label">${p.placeholder?'Preview slot':'Selected work'}</span><span class="placeholder-word">${esc(p.coverText||p.title)}</span>${img?'</template>':''}<span class="play" aria-hidden="true">${p.videoUrl?'▶':'<svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>'}</span></div><div class="card-meta"><div><h3>${esc(p.title)}</h3><p>${esc(p.role||p.format)}</p></div><span><svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></div></button>`}
+function card(p){const img=projectThumbnail(p), fallback=projectThumbnail(p, 'hqdefault');return `<button class="project-card" data-project="${esc(p.id)}" aria-label="Open ${esc(p.title)}"><div class="thumbnail theme-${esc(p.theme||'neutral')}">${img?`<img src="${esc(img)}" alt="${esc(p.title)}" loading="lazy"${fallback && fallback !== img ? ` data-fallback="${esc(fallback)}"` : ''}>`:''}${img?'<template>':''}<span class="draft-label">${p.placeholder?'Preview slot':'Selected work'}</span><span class="placeholder-word">${esc(p.coverText||p.title)}</span>${img?'</template>':''}<span class="play" aria-hidden="true">${p.videoUrl?'▶':'<svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>'}</span></div><div class="card-meta"><div><h3>${esc(p.title)}</h3><p>${esc(p.role||p.format)}</p></div><span><svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></div></button>`}
 function grid(items,cls=''){return items.length?`<div class="grid ${cls}">${items.map(card).join('')}</div>`:'<p class="empty">More work coming soon.</p>'}
 function section(key){const s=sections[key],items=data.projects.filter(p=>p.section===key);let body='';if(key==='editing'){for(const fmt of ['Long-form','Short-form'])body+=`<h2 class="group-title">${fmt}<small>${fmt==='Long-form'?'ROOM FOR THE STORY':'BUILT FOR THE FEED'}</small></h2>`+grid(items.filter(p=>p.format===fmt),fmt==='Short-form'?'featured portrait-grid':'featured');}else if(key==='music'){const sc=data.soundcloudEmbedUrl;const allowed=typeof sc==='string'&&sc.startsWith('https://w.soundcloud.com/player/');body=`<h2 class="group-title">Selected compositions <small>PRESS PLAY. TAKE YOUR TIME.</small></h2><div class="soundcloud-slot">${allowed?`<iframe title="Selected compositions on SoundCloud" loading="lazy" allow="autoplay" src="${esc(sc)}"></iframe>`:'<strong>Listen closely.</strong><div><p>A place for original compositions and productions.</p><p class="slot-note">Preview slot — your SoundCloud playlist will appear here.</p></div>'}</div><h2 class="group-title">Music in picture</h2>`+grid(items);}else{const reels=items.filter(p=>p.featured);body=`<h2 class="group-title">${key==='ai'?'AI showreel':'The showreels'}<small>A FIRST LOOK</small></h2>`+grid(reels,reels.length===1?'single':'featured')+`<div class="group-title"><h2 style="font:inherit;margin:0">Selected projects</h2>${key==='vfx'?`<div class="filters" aria-label="Filter projects">${['All','VFX','Cleanup','Motion'].map(f=>`<button data-filter="${f}" class="${filter===f?'active':''}" aria-pressed="${filter===f}">${f}</button>`).join('')}</div>`:''}</div>`+grid(items.filter(p=>!p.featured&&(key!=='vfx'||filter==='All'||p.format===filter)));}return `<section class="section-head"><a class="back" href="#home">← All disciplines</a><p class="eyebrow">${s.number} / Selected work</p><div class="section-heading"><h1>${s.name}</h1><p>${s.description}</p></div></section><nav class="section-tabs" aria-label="Disciplines">${Object.entries(sections).map(([k,v])=>`<a href="#${k}" ${k===key?'aria-current="page"':''} class="${k===key?'active':''}">${v.number} / ${v.short}</a>`).join('')}</nav><section class="content">${body}</section>`}
 function render(view){activeSection=view;document.body.classList.toggle('home-view',view==='home');main.innerHTML=sections[view]?section(view):home();document.title=`${sections[view]?.name||'Selected work'} — Uroš Maravić`;main.querySelectorAll('[data-project]').forEach(b=>b.onclick=()=>{lastFocus=b;modalOrigin=activeSection;replaceRoute('project/'+encodeURIComponent(b.dataset.project))});main.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{const y=scrollY;filter=b.dataset.filter;render(view);scrollTo(0,y);main.querySelector(`[data-filter="${filter}"]`)?.focus({preventScroll:true})});}
