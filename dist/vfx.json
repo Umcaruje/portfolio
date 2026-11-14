@@ -1,0 +1,64 @@
+{
+  "projects": [
+    {
+      "id": "vfx-showreel",
+      "title": "VFX showreel",
+      "format": "VFX",
+      "role": "Visual effects & compositing",
+      "featured": true,
+      "theme": "dark",
+      "coverText": "VFX / REEL",
+      "placeholder": true,
+      "thumbnail": "",
+      "videoUrl": "",
+      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
+      "credits": "",
+      "images": []
+    },
+    {
+      "id": "motion-showreel",
+      "title": "Motion design showreel",
+      "format": "Motion",
+      "role": "Motion design",
+      "featured": true,
+      "theme": "blue",
+      "coverText": "IN / MOTION",
+      "placeholder": true,
+      "thumbnail": "",
+      "videoUrl": "",
+      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
+      "credits": "",
+      "images": []
+    },
+    {
+      "id": "compositing-project",
+      "title": "Compositing project",
+      "format": "VFX",
+      "role": "Visual effects & compositing",
+      "featured": false,
+      "theme": "lilac",
+      "coverText": "BEFORE / AFTER",
+      "placeholder": true,
+      "thumbnail": "",
+      "videoUrl": "",
+      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
+      "credits": "",
+      "images": []
+    },
+    {
+      "id": "motion-project",
+      "title": "Motion design project",
+      "format": "Motion",
+      "role": "Motion design",
+      "featured": false,
+      "theme": "neutral",
+      "coverText": "TYPE / MOVES",
+      "placeholder": true,
+      "thumbnail": "",
+      "videoUrl": "",
+      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
+      "credits": "",
+      "images": []
+    }
+  ]
+}

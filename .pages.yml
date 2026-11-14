@@ -2,39 +2,162 @@ media:
   input: dist/assets
   output: assets
 content:
-  - name: portfolio
-    label: Portfolio content
+  - name: editing
+    label: Video Editing
     type: file
-    path: dist/content.json
+    path: dist/editing.json
     format: json
     fields:
-      - name: soundcloudEmbedUrl
-        label: SoundCloud player URL (iframe src)
-        type: string
       - name: projects
         label: Projects
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
         fields:
-          - {name: id, label: Unique project slug, type: string, required: true}
           - {name: title, label: Project title, type: string, required: true}
-          - name: section
-            type: select
-            options:
-              values: [editing, vfx, music, ai]
+          - {name: id, label: Project link slug (unique across the portfolio), type: string, required: true}
           - name: format
+            label: Format
             type: select
             options:
-              values: [Long-form, Short-form, VFX, Cleanup, Motion, Composition, Production, Showreel, Film]
+              values: [Long-form, Short-form]
           - {name: role, label: Your role, type: string}
-          - {name: thumbnail, type: image}
           - {name: videoUrl, label: YouTube or Vimeo link, type: string}
+          - name: thumbnail
+            label: Custom thumbnail
+            description: Leave empty to use the YouTube thumbnail automatically.
+            type: image
           - {name: description, type: text}
           - {name: credits, type: text}
-          - {name: featured, label: Feature as a showreel (VFX or AI), type: boolean}
           - {name: placeholder, label: Mark as preview placeholder, type: boolean}
-          - {name: coverText, label: Cover text when no thumbnail, type: string}
+          - {name: coverText, label: Cover text when no thumbnail is available, type: string}
           - name: theme
+            label: Cover color when no thumbnail is available
+            type: select
+            options:
+              values: [neutral, blue, dark, lilac]
+          - name: images
+            label: Breakdown images
+            type: image
+            list: true
+  - name: vfx
+    label: VFX & Motion
+    type: file
+    path: dist/vfx.json
+    format: json
+    fields:
+      - name: projects
+        label: Projects
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - {name: title, label: Project title, type: string, required: true}
+          - {name: id, label: Project link slug (unique across the portfolio), type: string, required: true}
+          - name: format
+            label: Format
+            type: select
+            options:
+              values: [VFX, Cleanup, Motion]
+          - {name: role, label: Your role, type: string}
+          - {name: videoUrl, label: YouTube or Vimeo link, type: string}
+          - name: thumbnail
+            label: Custom thumbnail
+            description: Leave empty to use the YouTube thumbnail automatically.
+            type: image
+          - {name: description, type: text}
+          - {name: credits, type: text}
+          - {name: featured, label: Show in the showreel section, type: boolean}
+          - {name: placeholder, label: Mark as preview placeholder, type: boolean}
+          - {name: coverText, label: Cover text when no thumbnail is available, type: string}
+          - name: theme
+            label: Cover color when no thumbnail is available
+            type: select
+            options:
+              values: [neutral, blue, dark, lilac]
+          - name: images
+            label: Breakdown images
+            type: image
+            list: true
+  - name: music
+    label: Music Production
+    type: file
+    path: dist/music.json
+    format: json
+    fields:
+      - {name: soundcloudEmbedUrl, label: SoundCloud playlist embed URL, type: string}
+      - name: projects
+        label: Projects
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - {name: title, label: Project title, type: string, required: true}
+          - {name: id, label: Project link slug (unique across the portfolio), type: string, required: true}
+          - name: format
+            label: Format
+            type: select
+            options:
+              values: [Composition, Production]
+          - {name: role, label: Your role, type: string}
+          - {name: videoUrl, label: YouTube or Vimeo link, type: string}
+          - name: thumbnail
+            label: Custom thumbnail
+            description: Leave empty to use the YouTube thumbnail automatically.
+            type: image
+          - {name: description, type: text}
+          - {name: credits, type: text}
+          - {name: placeholder, label: Mark as preview placeholder, type: boolean}
+          - {name: coverText, label: Cover text when no thumbnail is available, type: string}
+          - name: theme
+            label: Cover color when no thumbnail is available
+            type: select
+            options:
+              values: [neutral, blue, dark, lilac]
+          - name: images
+            label: Breakdown images
+            type: image
+            list: true
+  - name: ai
+    label: AI Video
+    type: file
+    path: dist/ai.json
+    format: json
+    fields:
+      - name: projects
+        label: Projects
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - {name: title, label: Project title, type: string, required: true}
+          - {name: id, label: Project link slug (unique across the portfolio), type: string, required: true}
+          - name: format
+            label: Format
+            type: select
+            options:
+              values: [Showreel, Film]
+          - {name: role, label: Your role, type: string}
+          - {name: videoUrl, label: YouTube or Vimeo link, type: string}
+          - name: thumbnail
+            label: Custom thumbnail
+            description: Leave empty to use the YouTube thumbnail automatically.
+            type: image
+          - {name: description, type: text}
+          - {name: credits, type: text}
+          - {name: featured, label: Show in the showreel section, type: boolean}
+          - {name: placeholder, label: Mark as preview placeholder, type: boolean}
+          - {name: coverText, label: Cover text when no thumbnail is available, type: string}
+          - name: theme
+            label: Cover color when no thumbnail is available
             type: select
             options:
               values: [neutral, blue, dark, lilac]

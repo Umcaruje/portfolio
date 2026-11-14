@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "id": "ai-showreel",
+      "title": "AI showreel",
+      "format": "Showreel",
+      "role": "AI-assisted production",
+      "featured": true,
+      "theme": "blue",
+      "coverText": "NEW / POSSIBILITIES",
+      "placeholder": true,
+      "thumbnail": "",
+      "videoUrl": "",
+      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
+      "credits": "",
+      "images": []
+    },
+    {
+      "id": "ai-film",
+      "title": "AI film project",
+      "format": "Film",
+      "role": "AI imagery, editing & finishing",
+      "featured": false,
+      "theme": "lilac",
+      "coverText": "IDEA / IMAGE",
+      "placeholder": true,
+      "thumbnail": "",
+      "videoUrl": "",
+      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
+      "credits": "",
+      "images": []
+    }
+  ]
+}

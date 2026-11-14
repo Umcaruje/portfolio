@@ -14,13 +14,13 @@ Upload this folder's contents to a GitHub repository, including `.github` and `.
 
 1. Open https://app.pagescms.org and sign in with GitHub.
 2. Install its GitHub App for this repository only.
-3. Open the repository, then **Portfolio content**.
-4. Add, remove or reorder Projects; upload thumbnails and paste video URLs.
+3. Open the repository, then choose **Video Editing**, **VFX & Motion**, **Music Production**, or **AI Video**.
+4. Add, remove or reorder Projects; paste video URLs and optionally upload custom thumbnails. Leave the custom thumbnail empty for automatic YouTube covers.
 5. Save. GitHub Actions publishes the update.
 
 CMS configuration is included but cannot be connected or tested against your account until a GitHub repository is selected.
 
-Project IDs must be unique, stable lowercase slugs, e.g. `music-video-title`. They become shareable links like `#project/music-video-title`. Section values are `editing`, `vfx`, `music`, `ai`. In editing, choose format `Long-form` or `Short-form`; in VFX use `VFX`, `Cleanup` or `Motion`. Featured shows a project above the grid in VFX/AI. Project array order controls display order. Turn off `placeholder` when replacing a preview slot with real work. Remove unused slots before public launch.
+Project IDs must be unique, stable lowercase slugs, e.g. `music-video-title`. They become shareable links like `#project/music-video-title`. In editing, choose format `Long-form` or `Short-form`; in VFX use `VFX`, `Cleanup` or `Motion`. Featured shows a project above the grid in VFX/AI. Project array order controls display order. Turn off `placeholder` when replacing a preview slot with real work. Remove unused slots before public launch.
 
 Use a complete YouTube or Vimeo link, including the privacy hash for unlisted Vimeo videos. Video embedding must be allowed by the owner. MP4 URLs are also supported. Full-size videos should stay on the video platform. Add images under `dist/assets/`; content URLs use `assets/filename.webp`. Add optional breakdown images in the images list.
 

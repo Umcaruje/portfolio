@@ -1,0 +1,35 @@
+{
+  "soundcloudEmbedUrl": "",
+  "projects": [
+    {
+      "id": "music-in-picture",
+      "title": "Music in picture",
+      "format": "Composition",
+      "role": "Composition & production",
+      "featured": false,
+      "theme": "dark",
+      "coverText": "SOUND / VISION",
+      "placeholder": true,
+      "thumbnail": "",
+      "videoUrl": "",
+      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
+      "credits": "",
+      "images": []
+    },
+    {
+      "id": "production-session",
+      "title": "Production session",
+      "format": "Production",
+      "role": "Music production",
+      "featured": false,
+      "theme": "lilac",
+      "coverText": "IN / SESSION",
+      "placeholder": true,
+      "thumbnail": "",
+      "videoUrl": "",
+      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
+      "credits": "",
+      "images": []
+    }
+  ]
+}

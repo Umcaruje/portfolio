@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "id": "long-form-film",
+      "title": "Long-form film",
+      "format": "Long-form",
+      "role": "Video editing",
+      "featured": false,
+      "theme": "neutral",
+      "coverText": "LONG / FORM",
+      "placeholder": true,
+      "thumbnail": "",
+      "videoUrl": "",
+      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
+      "credits": "",
+      "images": []
+    },
+    {
+      "id": "short-form-edit",
+      "title": "Short-form edit",
+      "format": "Short-form",
+      "role": "Video editing",
+      "featured": false,
+      "theme": "blue",
+      "coverText": "SHORT / FORM",
+      "placeholder": true,
+      "thumbnail": "",
+      "videoUrl": "",
+      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
+      "credits": "",
+      "images": []
+    }
+  ]
+}
