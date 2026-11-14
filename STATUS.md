@@ -32,7 +32,7 @@
 
 - Kartice Video Editing i AI Video imaju apstraktne oblike. Muzicki talas postepeno bledi ulevo.
 
-- Video Editing koristi apstraktne trake, klipove i kursor montazne vremenske linije.
+- Video Editing koristi apstraktne trake i klipove montazne vremenske linije.
 
 ## Ostaje
 
