@@ -5,6 +5,9 @@
 - Statički sajt je u dist/. Konfiguracija za Pages CMS je u .pages.yml, a GitHub Pages workflow u .github/workflows/pages.yml.
 - Dodat je CV u dist/assets/uros-maravic-cv.pdf na postojeću putanju dugmeta CV.
 
+- Uklonjena je ukrasna tacka iza imena na naslovnoj strani.
+- Opis uloga je premesten desno od imena, umesto prethodnog uvoda.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz dist/content.json.
