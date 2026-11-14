@@ -55,6 +55,13 @@
       "videoUrl": "https://www.youtube.com/watch?v=f8DiEGkgOxQ",
       "featured": false,
       "placeholder": false
+    },
+    {
+      "title": "Nikolija - VISKI",
+      "role": "Screen replacement",
+      "videoUrl": "https://www.youtube.com/watch?v=5u-gwsqFD_w",
+      "featured": false,
+      "placeholder": false
     }
   ]
 }
