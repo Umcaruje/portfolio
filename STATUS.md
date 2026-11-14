@@ -32,6 +32,8 @@
 
 - Kartice Video Editing i AI Video imaju apstraktne oblike. Muzicki talas postepeno bledi ulevo.
 
+- Video Editing koristi apstraktne trake, klipove i kursor montazne vremenske linije.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
