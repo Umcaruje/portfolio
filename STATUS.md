@@ -24,6 +24,8 @@
 
 - Music Production ima uvecanu neprekinutu talasnu formu sa slabijom vidljivoscu.
 
+- Krugovi na VFX kartici su uvecani i priguseni tamnijim plavim tonovima.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
