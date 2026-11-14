@@ -30,6 +30,8 @@
 
 - U sve cetiri sekcije Pages CMS-a sakrivena su polja Format, Credits, Placeholder, Cover text, Cover color i Breakdown images. Postojece vrednosti ostaju u sadrzaju.
 
+- Kartice Video Editing i AI Video imaju apstraktne oblike. Muzicki talas postepeno bledi ulevo.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
