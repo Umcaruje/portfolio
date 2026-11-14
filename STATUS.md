@@ -26,6 +26,8 @@
 
 - Krugovi na VFX kartici su uvecani i priguseni tamnijim plavim tonovima.
 
+- Znak um je uklonjen iz zaglavlja.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
