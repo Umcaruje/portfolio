@@ -34,6 +34,8 @@
 
 - Video Editing koristi apstraktne trake i klipove montazne vremenske linije.
 
+- Pojednostavljena su zaglavlja sekcija. Prazne uloge se ne prikazuju u karticama i detaljima.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
