@@ -32,6 +32,14 @@
       "placeholder": true,
       "coverText": "BEFORE / AFTER",
       "theme": "lilac"
+    },
+    {
+      "title": " Kosta - NI KAFANE NE ZNAJU",
+      "id": "ni-kafane-ne-znaju",
+      "role": "Fire simulation, Compositing",
+      "videoUrl": "https://www.youtube.com/watch?v=h7LH_NBFffk",
+      "featured": false,
+      "placeholder": false
     }
   ]
 }
