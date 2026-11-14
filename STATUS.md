@@ -42,6 +42,8 @@
 
 - Javni Instagram Reelovi i objave mogu da se otvore u projektu, uz direktan link do Instagrama.
 
+- Video Editing ponovo ima izbor Long-form / Short-form u Pages CMS-u.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
