@@ -17,6 +17,8 @@
 
 - Dugme Copy project link je uklonjeno iz detalja projekta.
 
+- Uklonjeni su uvodna oznaka i podnaslovi cetiri kartice na naslovnoj strani.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
