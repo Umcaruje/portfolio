@@ -19,7 +19,6 @@ content:
           - {name: title, label: Project title, type: string, required: true}
           - {name: id, label: Project link slug (unique across the portfolio), type: string, hidden: true}
           - name: format
-            hidden: true
             label: Format
             type: select
             options:
