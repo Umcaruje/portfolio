@@ -1,34 +1,32 @@
 {
   "projects": [
     {
-      "id": "long-form-film",
       "title": "Long-form film",
+      "id": "long-form-film",
       "format": "Long-form",
       "role": "Video editing",
-      "featured": false,
-      "theme": "neutral",
-      "coverText": "LONG / FORM",
-      "placeholder": true,
-      "thumbnail": "",
-      "videoUrl": "",
       "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
-      "credits": "",
-      "images": []
+      "placeholder": true,
+      "coverText": "LONG / FORM",
+      "theme": "neutral"
     },
     {
+      "title": "Scandinavian smiles: Black Friday",
       "id": "short-form-edit",
-      "title": "Short-form edit",
       "format": "Short-form",
       "role": "Video editing",
-      "featured": false,
-      "theme": "blue",
-      "coverText": "SHORT / FORM",
+      "videoUrl": "https://youtube.com/shorts/1rjN9hHrt60",
+      "description": "One of several viral \"brainrot\" commercials I did for Scandinavian Smiles, I generated all of the AI assets in the video.",
       "placeholder": true,
-      "thumbnail": "",
-      "videoUrl": "",
-      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
-      "credits": "",
-      "images": []
+      "coverText": "SHORT / FORM",
+      "theme": "blue"
+    },
+    {
+      "title": "Scandinavian smiles: Caveman",
+      "role": "Video editing",
+      "videoUrl": "https://youtube.com/shorts/YRHaMlwMHl0",
+      "description": "One of several viral \"brainrot\" commercials I did for Scandinavian Smiles, I generated all of the AI assets in the video.",
+      "placeholder": false
     }
   ]
 }
