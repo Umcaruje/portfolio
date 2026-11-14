@@ -48,6 +48,13 @@
       "videoUrl": "https://www.youtube.com/watch?v=Gva-eroMdqI",
       "featured": false,
       "placeholder": false
+    },
+    {
+      "title": " Bossy - LKBY",
+      "role": "HUD animation, Compositing",
+      "videoUrl": "https://www.youtube.com/watch?v=f8DiEGkgOxQ",
+      "featured": false,
+      "placeholder": false
     }
   ]
 }
