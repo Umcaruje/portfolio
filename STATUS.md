@@ -6,7 +6,7 @@
 - Dodat je CV u dist/assets/uros-maravic-cv.pdf na postojeću putanju dugmeta CV.
 
 - Uklonjena je ukrasna tacka iza imena na naslovnoj strani.
-- Opis uloga je premesten desno od imena, umesto prethodnog uvoda.
+- Tri uloge su prikazane plavom bojom u zasebnim redovima, desno od imena.
 
 ## Ostaje
 
