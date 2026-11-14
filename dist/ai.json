@@ -1,34 +1,17 @@
 {
   "projects": [
     {
-      "id": "ai-showreel",
       "title": "AI showreel",
+      "id": "ai-showreel",
       "format": "Showreel",
       "role": "AI-assisted production",
+      "videoUrl": "https://youtu.be/D0n5pUlhG3E",
+      "thumbnail": "assets/Uros Maravic AI Showreel.00_00_02_20.Still001.png",
+      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
       "featured": true,
-      "theme": "blue",
+      "placeholder": true,
       "coverText": "NEW / POSSIBILITIES",
-      "placeholder": true,
-      "thumbnail": "",
-      "videoUrl": "",
-      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
-      "credits": "",
-      "images": []
-    },
-    {
-      "id": "ai-film",
-      "title": "AI film project",
-      "format": "Film",
-      "role": "AI imagery, editing & finishing",
-      "featured": false,
-      "theme": "lilac",
-      "coverText": "IDEA / IMAGE",
-      "placeholder": true,
-      "thumbnail": "",
-      "videoUrl": "",
-      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
-      "credits": "",
-      "images": []
+      "theme": "blue"
     }
   ]
 }
