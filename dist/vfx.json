@@ -1,64 +1,48 @@
 {
   "projects": [
     {
-      "id": "vfx-showreel",
       "title": "VFX showreel",
+      "id": "vfx-showreel",
       "format": "VFX",
       "role": "Visual effects & compositing",
+      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
       "featured": true,
-      "theme": "dark",
+      "placeholder": true,
       "coverText": "VFX / REEL",
-      "placeholder": true,
-      "thumbnail": "",
-      "videoUrl": "",
-      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
-      "credits": "",
-      "images": []
+      "theme": "dark"
     },
     {
-      "id": "motion-showreel",
       "title": "Motion design showreel",
+      "id": "motion-showreel",
       "format": "Motion",
       "role": "Motion design",
+      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
       "featured": true,
-      "theme": "blue",
+      "placeholder": true,
       "coverText": "IN / MOTION",
-      "placeholder": true,
-      "thumbnail": "",
-      "videoUrl": "",
-      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
-      "credits": "",
-      "images": []
+      "theme": "blue"
     },
     {
-      "id": "compositing-project",
-      "title": "Compositing project",
+      "title": "Rimski - PARRE",
+      "id": "rimski-parre",
       "format": "VFX",
-      "role": "Visual effects & compositing",
+      "role": "Key & Compositing",
+      "videoUrl": "https://www.youtube.com/watch?v=MJS5auXPp7E",
       "featured": false,
-      "theme": "lilac",
-      "coverText": "BEFORE / AFTER",
       "placeholder": true,
-      "thumbnail": "",
-      "videoUrl": "",
-      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
-      "credits": "",
-      "images": []
+      "coverText": "BEFORE / AFTER",
+      "theme": "lilac"
     },
     {
-      "id": "motion-project",
       "title": "Motion design project",
+      "id": "motion-project",
       "format": "Motion",
       "role": "Motion design",
-      "featured": false,
-      "theme": "neutral",
-      "coverText": "TYPE / MOVES",
-      "placeholder": true,
-      "thumbnail": "",
-      "videoUrl": "",
       "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
-      "credits": "",
-      "images": []
+      "featured": false,
+      "placeholder": true,
+      "coverText": "TYPE / MOVES",
+      "theme": "neutral"
     }
   ]
 }
