@@ -70,6 +70,21 @@ function render(view){activeSection=view;document.body.classList.toggle('home-vi
 let currentProject;
 function showProject(p){currentProject=p;const idx=data.projects.filter(x=>x.section===p.section).findIndex(x=>x.id===p.id),total=data.projects.filter(x=>x.section===p.section).length;document.querySelector('#modal-category').textContent=sections[p.section].name;const url=embedUrl(p.videoUrl);let media=url?`<iframe src="${esc(url)}" title="${esc(p.title)}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`:validAsset(p.videoUrl)&&/\.mp4(?:\?|$)/i.test(p.videoUrl)?`<video controls playsinline src="${esc(p.videoUrl)}"></video>`:validAsset(p.thumbnail)?`<img src="${esc(p.thumbnail)}" alt="${esc(p.title)}">`:`<strong>${esc(p.coverText||p.title)}</strong><p>${p.placeholder?'Preview slot — add your video and thumbnail to make this project yours.':'Video coming soon.'}</p>`;document.querySelector('#modal-body').innerHTML=`<div class="modal-media">${media}</div><div class="modal-info"><div><h2 id="modal-title">${esc(p.title)}</h2><p>${esc(p.description)}</p></div>${p.role?.trim()||p.credits?.trim()?`<dl>${p.role?.trim()?`<dt>Role</dt><dd>${esc(p.role)}</dd>`:''}${p.credits?.trim()?`<dt>Credits</dt><dd>${esc(p.credits)}</dd>`:''}</dl>`:''}</div>${p.images?.length?`<div class="extra-images">${p.images.map(i=>validAsset(i)?`<img src="${esc(i)}" alt="${esc(p.title)} — project breakdown" loading="lazy">`:'').join('')}</div>`:''}`;document.querySelector('#project-index').textContent=`${String(idx+1).padStart(2,'0')} / ${String(total).padStart(2,'0')}`;document.querySelector('#prev-project').disabled=total<2;document.querySelector('#next-project').disabled=total<2;if(!modal.open){modal.showModal();document.body.style.overflow='hidden';document.querySelector('#close-modal').focus()}modal.scrollTop=0;}
 function replaceRoute(hash){history.replaceState(null,'','#'+hash);route()}
+function assignProjectSlugs(projects) {
+  const used = new Set(projects.map(project => project.id).filter(Boolean));
+  return projects.map(project => {
+    if (project.id) return project;
+
+    const base = project.title.normalize('NFKD').toLowerCase()
+      .replace(/\p{M}/gu, '').replace(/đ/g, 'dj')
+      .replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '') || project.section;
+    let id = base;
+    for (let suffix = 2; used.has(id); suffix++) id = base + '-' + suffix;
+
+    used.add(id);
+    return { ...project, id };
+  });
+}
 function closeProject(){replaceRoute(sections[modalOrigin]?modalOrigin:currentProject?.section||'home')}
 function route(){let hash;try{hash=decodeURIComponent(location.hash.slice(1))||'home'}catch{hash='home'};if(hash.startsWith('project/')){const p=data.projects.find(p=>p.id===hash.slice(8));if(p){if(!main.innerHTML){modalOrigin=p.section;render(p.section)}showProject(p);return}hash='home'}if(!sections[hash]&&hash!=='home'){hash='home';history.replaceState(null,'','#home')}const wasOpen=modal.open;if(wasOpen){modal.close();document.querySelector('#modal-body').innerHTML='';document.body.style.overflow=''}const changed=activeSection!==hash;if(changed||!main.innerHTML){render(hash);scrollTo(0,0)}if(wasOpen){if(lastFocus?.isConnected)lastFocus.focus({preventScroll:true});else main.focus({preventScroll:true})}else if(changed)main.focus({preventScroll:true});}
 document.querySelector('#close-modal').onclick=closeProject;modal.addEventListener('cancel',e=>{e.preventDefault();closeProject()});modal.addEventListener('click',e=>{if(e.target===modal){const r=modal.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeProject()}});function next(step){const list=data.projects.filter(p=>p.section===currentProject.section),idx=list.findIndex(p=>p.id===currentProject.id);replaceRoute('project/'+encodeURIComponent(list[(idx+step+list.length)%list.length].id))}document.querySelector('#prev-project').onclick=()=>next(-1);document.querySelector('#next-project').onclick=()=>next(1);document.querySelector('#year').textContent=new Date().getFullYear();Promise.all(Object.keys(sections).map(async section => {
@@ -79,4 +94,4 @@ document.querySelector('#close-modal').onclick=closeProject;modal.addEventListen
 })).then(pages => ({
   projects: pages.flatMap(({ section, content }) => (content.projects ?? []).map(project => ({ ...project, section, format: project.format || ({ editing: 'Long-form', vfx: 'VFX' })[section] || '' }))),
   soundcloudEmbedUrl: pages.find(page => page.section === 'music').content.soundcloudEmbedUrl
-})).then(d=>{data=d;route();window.addEventListener('hashchange',route)}).catch(()=>{main.innerHTML='<section class="content"><h1>Unable to load projects.</h1><p>Please refresh the page or <a href="mailto:uros.maravic@gmail.com">get in touch</a>.</p></section>'});
+})).then(d=>{data={...d,projects:assignProjectSlugs(d.projects)};route();window.addEventListener('hashchange',route)}).catch(()=>{main.innerHTML='<section class="content"><h1>Unable to load projects.</h1><p>Please refresh the page or <a href="mailto:uros.maravic@gmail.com">get in touch</a>.</p></section>'});
