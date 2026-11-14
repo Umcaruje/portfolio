@@ -83,6 +83,13 @@
       "videoUrl": "https://www.youtube.com/watch?v=1pY1v5ME4rA",
       "featured": false,
       "placeholder": false
+    },
+    {
+      "title": "Barbara Bobak - EDIP",
+      "role": "Cleanup, Compositing",
+      "videoUrl": "https://www.youtube.com/watch?v=qnYMBLARHH4",
+      "featured": false,
+      "placeholder": false
     }
   ]
 }
