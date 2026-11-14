@@ -28,6 +28,8 @@
 
 - Znak um je uklonjen iz zaglavlja.
 
+- U sve cetiri sekcije Pages CMS-a sakrivena su polja Format, Credits, Placeholder, Cover text, Cover color i Breakdown images. Postojece vrednosti ostaju u sadrzaju.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
