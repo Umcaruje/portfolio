@@ -6,7 +6,8 @@
 - CV dugme i PDF su uklonjeni sa sajta.
 
 - Uklonjena je ukrasna tacka iza imena na naslovnoj strani.
-- Tri uloge su prikazane plavom bojom u zasebnim redovima, desno od imena.
+- Tri uloge su prikazane plavom bojom u jednom redu ispod imena, odvojene kosim crtama.
+- Uklonjena je strelica uz znak um.
 
 - Pages CMS ima zaseban meni za svaku od cetiri sekcije.
 - YouTube naslovnica se prikazuje automatski kada nema rucno zadate slike.
