@@ -37,6 +37,63 @@
       "placeholder": false
     },
     {
+      "title": " Lovy Elias - BOMAYE",
+      "role": "Cleanup",
+      "videoUrl": "https://www.youtube.com/watch?v=D1-HKb3zdB8",
+      "featured": false,
+      "placeholder": false
+    },
+    {
+      "title": " 310babii & Saweetie - rock your hips",
+      "role": "Cleanup",
+      "videoUrl": "https://www.youtube.com/watch?v=M99RsGnzHoU",
+      "featured": false,
+      "placeholder": false
+    },
+    {
+      "title": "SZA - Drove by ur funeral",
+      "role": "Cleanup",
+      "videoUrl": "https://www.instagram.com/p/DEe5rgkxpJJ/",
+      "thumbnail": "assets/Uros Maravic VFX Showreel.00_00_08_04.Still002.png",
+      "featured": false,
+      "placeholder": false
+    },
+    {
+      "title": " Teodora - Karma",
+      "role": "Cleanup",
+      "videoUrl": "https://www.youtube.com/watch?v=Sii_S9cWbls",
+      "featured": false,
+      "placeholder": false
+    },
+    {
+      "title": " Teodora - Žena bez adrese",
+      "role": "Cleanup",
+      "videoUrl": "https://www.youtube.com/watch?v=1pY1v5ME4rA",
+      "featured": false,
+      "placeholder": false
+    },
+    {
+      "title": " Senidah - Omen",
+      "role": "Camera track",
+      "videoUrl": "https://www.youtube.com/watch?v=PztR4LSeHm8",
+      "featured": false,
+      "placeholder": false
+    },
+    {
+      "title": "Nikolija - VISKI",
+      "role": "Screen replacement",
+      "videoUrl": "https://www.youtube.com/watch?v=5u-gwsqFD_w",
+      "featured": false,
+      "placeholder": false
+    },
+    {
+      "title": "Biba x Nikolija - 3 Po 3",
+      "role": "Key",
+      "videoUrl": "https://www.youtube.com/watch?v=JpFzbkxU6WA",
+      "featured": false,
+      "placeholder": false
+    },
+    {
       "title": "Rimski - PARRE",
       "id": "rimski-parre",
       "format": "VFX",
@@ -71,30 +128,9 @@
       "placeholder": false
     },
     {
-      "title": "Nikolija - VISKI",
-      "role": "Screen replacement",
-      "videoUrl": "https://www.youtube.com/watch?v=5u-gwsqFD_w",
-      "featured": false,
-      "placeholder": false
-    },
-    {
       "title": " Cazzafura, Senidah - Greh",
       "role": "Cleanup, Roto",
       "videoUrl": "https://www.youtube.com/watch?v=5wZ22kM0Xls",
-      "featured": false,
-      "placeholder": false
-    },
-    {
-      "title": " Teodora - Karma",
-      "role": "Cleanup",
-      "videoUrl": "https://www.youtube.com/watch?v=Sii_S9cWbls",
-      "featured": false,
-      "placeholder": false
-    },
-    {
-      "title": " Teodora - Žena bez adrese",
-      "role": "Cleanup",
-      "videoUrl": "https://www.youtube.com/watch?v=1pY1v5ME4rA",
       "featured": false,
       "placeholder": false
     },
@@ -120,45 +156,9 @@
       "placeholder": false
     },
     {
-      "title": " Senidah - Omen",
-      "role": "Camera track",
-      "videoUrl": "https://www.youtube.com/watch?v=PztR4LSeHm8",
-      "featured": false,
-      "placeholder": false
-    },
-    {
-      "title": " 310babii & Saweetie - rock your hips",
-      "role": "Cleanup",
-      "videoUrl": "https://www.youtube.com/watch?v=M99RsGnzHoU",
-      "featured": false,
-      "placeholder": false
-    },
-    {
-      "title": "Biba x Nikolija - 3 Po 3",
-      "role": "Key",
-      "videoUrl": "https://www.youtube.com/watch?v=JpFzbkxU6WA",
-      "featured": false,
-      "placeholder": false
-    },
-    {
-      "title": " Lovy Elias - BOMAYE",
-      "role": "Cleanup",
-      "videoUrl": "https://www.youtube.com/watch?v=D1-HKb3zdB8",
-      "featured": false,
-      "placeholder": false
-    },
-    {
       "title": "Rimski X Biba - PAVILJONI",
       "role": "Compositing",
       "videoUrl": "https://www.youtube.com/watch?v=eW_RY1ABRXk",
-      "featured": false,
-      "placeholder": false
-    },
-    {
-      "title": "SZA - Drove by ur funeral",
-      "role": "Cleanup",
-      "videoUrl": "https://www.instagram.com/p/DEe5rgkxpJJ/",
-      "thumbnail": "assets/Uros Maravic VFX Showreel.00_00_08_04.Still002.png",
       "featured": false,
       "placeholder": false
     },
