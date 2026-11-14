@@ -77,6 +77,6 @@ document.querySelector('#close-modal').onclick=closeProject;modal.addEventListen
   if (!response.ok) throw new Error('Unable to load ' + section);
   return { section, content: await response.json() };
 })).then(pages => ({
-  projects: pages.flatMap(({ section, content }) => (content.projects ?? []).map(project => ({ ...project, section }))),
+  projects: pages.flatMap(({ section, content }) => (content.projects ?? []).map(project => ({ ...project, section, format: project.format || ({ editing: 'Long-form', vfx: 'VFX' })[section] || '' }))),
   soundcloudEmbedUrl: pages.find(page => page.section === 'music').content.soundcloudEmbedUrl
 })).then(d=>{data=d;route();window.addEventListener('hashchange',route)}).catch(()=>{main.innerHTML='<section class="content"><h1>Unable to load projects.</h1><p>Please refresh the page or <a href="mailto:uros.maravic@gmail.com">get in touch</a>.</p></section>'});
