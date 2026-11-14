@@ -22,6 +22,8 @@
 
 - Kartice na naslovnoj strani imaju ugaonu ikonicu gore desno, bez natpisa Explore.
 
+- Music Production ima uvecanu neprekinutu talasnu formu sa slabijom vidljivoscu.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
