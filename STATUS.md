@@ -38,6 +38,8 @@
 
 - Uklonjeni su VFX filteri i oznake uloga ispod naslova istaknutih showreelova.
 
+- Novi projekti dobijaju slug iz naslova uz nastavak za duplikate. Postojeci ID-jevi se koriste za stare linkove.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
