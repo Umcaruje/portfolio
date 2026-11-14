@@ -1,11 +1,11 @@
 {
   "projects": [
     {
-      "title": "Long-form film",
+      "title": "Digi Klinci Promo",
       "id": "long-form-film",
       "format": "Long-form",
       "role": "Video editing",
-      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
+      "videoUrl": "https://www.youtube.com/watch?v=ICDp-m2MxaE",
       "placeholder": true,
       "coverText": "LONG / FORM",
       "theme": "neutral"
@@ -23,11 +23,11 @@
     },
     {
       "title": "Scandinavian smiles: Caveman",
+      "format": "Short-form",
       "role": "Video editing",
       "videoUrl": "https://youtube.com/shorts/YRHaMlwMHl0",
       "description": "One of several viral \"brainrot\" commercials I did for Scandinavian Smiles, I generated all of the AI assets in the video.",
-      "placeholder": false,
-      "format": "Short-form"
+      "placeholder": false
     }
   ]
 }
