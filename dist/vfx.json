@@ -23,9 +23,9 @@
       "theme": "blue"
     },
     {
-      "title": "Ice Cube - It's My Ego",
-      "role": "Tracking, Compositing",
-      "videoUrl": "https://www.youtube.com/watch?v=vvvQwYXPV-s",
+      "title": "Coachella x Snapdragon",
+      "role": "Compositing, Screen replacement",
+      "videoUrl": "https://www.instagram.com/reels/DIknZSxJ7nQ/",
       "featured": false,
       "placeholder": false
     },
@@ -37,9 +37,17 @@
       "placeholder": false
     },
     {
-      "title": " Lovy Elias - BOMAYE",
+      "title": "SZA - Drove by ur funeral",
       "role": "Cleanup",
-      "videoUrl": "https://www.youtube.com/watch?v=D1-HKb3zdB8",
+      "videoUrl": "https://www.instagram.com/p/DEe5rgkxpJJ/",
+      "thumbnail": "assets/Uros Maravic VFX Showreel.00_00_08_04.Still002.png",
+      "featured": false,
+      "placeholder": false
+    },
+    {
+      "title": "Ice Cube - It's My Ego",
+      "role": "Tracking, Compositing",
+      "videoUrl": "https://www.youtube.com/watch?v=vvvQwYXPV-s",
       "featured": false,
       "placeholder": false
     },
@@ -51,10 +59,9 @@
       "placeholder": false
     },
     {
-      "title": "SZA - Drove by ur funeral",
+      "title": " Lovy Elias - BOMAYE",
       "role": "Cleanup",
-      "videoUrl": "https://www.instagram.com/p/DEe5rgkxpJJ/",
-      "thumbnail": "assets/Uros Maravic VFX Showreel.00_00_08_04.Still002.png",
+      "videoUrl": "https://www.youtube.com/watch?v=D1-HKb3zdB8",
       "featured": false,
       "placeholder": false
     },
@@ -166,13 +173,6 @@
       "title": " Damir Kedžo - Spojeni Nevidljivo",
       "role": "Fire simulation, Compositing",
       "videoUrl": "https://www.youtube.com/watch?v=wdtreq-dMzk",
-      "featured": false,
-      "placeholder": false
-    },
-    {
-      "title": "Coachella x Snapdragon",
-      "role": "Compositing, Screen replacement",
-      "videoUrl": "https://www.instagram.com/reels/DIknZSxJ7nQ/",
       "featured": false,
       "placeholder": false
     }
