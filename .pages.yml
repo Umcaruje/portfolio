@@ -17,7 +17,7 @@ content:
             summary: "{title}"
         fields:
           - {name: title, label: Project title, type: string, required: true}
-          - {name: id, label: Project link slug (unique across the portfolio), type: string, required: true}
+          - {name: id, label: Project link slug (unique across the portfolio), type: string, hidden: true}
           - name: format
             hidden: true
             label: Format
@@ -60,7 +60,7 @@ content:
             summary: "{title}"
         fields:
           - {name: title, label: Project title, type: string, required: true}
-          - {name: id, label: Project link slug (unique across the portfolio), type: string, required: true}
+          - {name: id, label: Project link slug (unique across the portfolio), type: string, hidden: true}
           - name: format
             hidden: true
             label: Format
@@ -105,7 +105,7 @@ content:
             summary: "{title}"
         fields:
           - {name: title, label: Project title, type: string, required: true}
-          - {name: id, label: Project link slug (unique across the portfolio), type: string, required: true}
+          - {name: id, label: Project link slug (unique across the portfolio), type: string, hidden: true}
           - name: format
             hidden: true
             label: Format
@@ -148,7 +148,7 @@ content:
             summary: "{title}"
         fields:
           - {name: title, label: Project title, type: string, required: true}
-          - {name: id, label: Project link slug (unique across the portfolio), type: string, required: true}
+          - {name: id, label: Project link slug (unique across the portfolio), type: string, hidden: true}
           - name: format
             hidden: true
             label: Format
