@@ -40,6 +40,14 @@
       "videoUrl": "https://www.youtube.com/watch?v=h7LH_NBFffk",
       "featured": false,
       "placeholder": false
+    },
+    {
+      "title": " Damir Kedžo - Voljena ženo",
+      "id": "voljena-zeno",
+      "role": "VFX, Compositing",
+      "videoUrl": "https://www.youtube.com/watch?v=Gva-eroMdqI",
+      "featured": false,
+      "placeholder": false
     }
   ]
 }
