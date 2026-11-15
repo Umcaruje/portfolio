@@ -44,6 +44,8 @@
 
 - Video Editing ponovo ima izbor Long-form / Short-form u Pages CMS-u.
 
+- Uklonjen je okvir fokusa oko glavnog sadrzaja posle prelaska izmedju sekcija.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
