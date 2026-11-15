@@ -37,6 +37,13 @@
       "videoUrl": "https://youtube.com/shorts/YRHaMlwMHl0",
       "description": "One of several viral \"brainrot\" commercials I did for Scandinavian Smiles, I generated all of the AI assets in the video.",
       "placeholder": false
+    },
+    {
+      "title": "Didot tutorials",
+      "format": "Short-form",
+      "role": "Video editing,",
+      "videoUrl": "https://www.instagram.com/p/CzyyOeAKyLI/",
+      "placeholder": false
     }
   ]
 }
