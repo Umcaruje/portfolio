@@ -30,7 +30,6 @@ For SoundCloud, obtain the playlist embed code from Share → Embed and paste on
 
 Off-white, near-black and cobalt, bold italic display type inspired by the supplied CV. Uses Google Fonts Outfit and DM Sans (with system fallbacks), rather than extracting commercial Futura fonts from the PDF. Abstract home tile graphics are interface artwork, not claimed portfolio work. All sample projects are explicitly marked as layout previews.
 
-Header/footer contact links are in `dist/index.html`.
 
 ## Accessibility and performance
 
