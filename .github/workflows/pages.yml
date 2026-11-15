@@ -19,6 +19,49 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Optimize portfolio images
+        run: |
+          python -m pip install Pillow
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          from PIL import Image, ImageOps
+
+          root = Path("dist").resolve()
+          optimized = {}
+
+          def thumbnail(value):
+              if not isinstance(value, str) or not value.startswith("assets/"):
+                  return value
+              source = (root / value).resolve()
+              if not source.is_relative_to(root / "assets") or not source.is_file():
+                  return value
+              if source in optimized:
+                  return optimized[source]
+              with Image.open(source) as image:
+                  if getattr(image, "is_animated", False) or "A" in image.getbands() or "transparency" in image.info:
+                      return value
+                  image = ImageOps.exif_transpose(image).convert("RGB")
+                  image.thumbnail((1280, 1280), Image.Resampling.LANCZOS)
+                  target = source.with_name(source.name + ".portfolio.jpg")
+                  image.save(target, quality=76, optimize=True, progressive=True)
+              if target.stat().st_size >= source.stat().st_size:
+                  target.unlink()
+                  return value
+              optimized[source] = target.relative_to(root).as_posix()
+              print(f"{source.name}: {source.stat().st_size:,} -> {target.stat().st_size:,} bytes")
+              return optimized[source]
+
+          for section in ("editing", "vfx", "music", "ai"):
+              path = root / f"{section}.json"
+              data = json.loads(path.read_text(encoding="utf-8"))
+              for project in data.get("projects", []):
+                  if "thumbnail" in project:
+                      project["thumbnail"] = thumbnail(project["thumbnail"])
+                  if project.get("images"):
+                      project["images"] = [thumbnail(image) for image in project["images"]]
+              path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          PY
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
