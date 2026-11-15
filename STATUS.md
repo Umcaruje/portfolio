@@ -46,6 +46,8 @@
 
 - Uklonjen je okvir fokusa oko glavnog sadrzaja posle prelaska izmedju sekcija.
 
+- HTTP i HTTPS linkovi u opisima projekata su klikabilni, uz ocuvane prelome redova.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
