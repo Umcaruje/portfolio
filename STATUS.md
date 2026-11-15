@@ -54,6 +54,8 @@
 
 - Uklonjena je kontakt mejl adresa iz zaglavlja, podnozja i poruke o gresci.
 
+- Short-form prikazuje cetiri kartice u redu na desktopu.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
