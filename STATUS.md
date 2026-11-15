@@ -52,6 +52,8 @@
 
 - AI Video se prikazuje samo kada ima radova, a prazne grupe se skrivaju.
 
+- Uklonjena je kontakt mejl adresa iz zaglavlja, podnozja i poruke o gresci.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
