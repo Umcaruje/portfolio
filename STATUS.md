@@ -56,6 +56,8 @@
 
 - Short-form prikazuje cetiri kartice u redu na desktopu.
 
+- Short-form prikazuje dve kartice u redu na mobilnom.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
