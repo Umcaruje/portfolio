@@ -39,7 +39,9 @@ jobs:
               if source in optimized:
                   return optimized[source]
               with Image.open(source) as image:
-                  if getattr(image, "is_animated", False) or "A" in image.getbands() or "transparency" in image.info:
+                  if getattr(image, "is_animated", False):
+                      return value
+                  if ("A" in image.getbands() or "transparency" in image.info) and image.convert("RGBA").getchannel("A").getextrema()[0] < 255:
                       return value
                   image = ImageOps.exif_transpose(image).convert("RGB")
                   image.thumbnail((1280, 1280), Image.Resampling.LANCZOS)
