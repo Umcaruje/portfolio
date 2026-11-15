@@ -88,3 +88,5 @@ dialog{overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-w
   font-size: 13px;
   text-decoration: underline;
 }
+
+.home-view .quadrants > .tile-music:nth-child(3):last-child { grid-column: 1 / -1; }
