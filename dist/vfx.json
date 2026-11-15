@@ -66,6 +66,14 @@
       "placeholder": false
     },
     {
+      "title": "Fuerza Regida - TU SANCHO",
+      "role": "Roto",
+      "videoUrl": "https://www.youtube.com/watch?v=PXSmPTX-SgM",
+      "description": "Nominated for a VMA",
+      "featured": false,
+      "placeholder": false
+    },
+    {
       "title": " Teodora - Karma",
       "role": "Cleanup",
       "videoUrl": "https://www.youtube.com/watch?v=Sii_S9cWbls",
@@ -187,14 +195,6 @@
       "title": " Trile - CRNA VRANA",
       "role": "Cleanup",
       "videoUrl": "https://www.youtube.com/watch?v=C0U4sa0uKFY",
-      "featured": false,
-      "placeholder": false
-    },
-    {
-      "title": "Fuerza Regida - TU SANCHO",
-      "role": "Roto",
-      "videoUrl": "https://www.youtube.com/watch?v=PXSmPTX-SgM",
-      "description": "Nominated for a VMA",
       "featured": false,
       "placeholder": false
     }
