@@ -66,10 +66,24 @@
       "placeholder": false
     },
     {
+      "title": "LET KAIYA COOK: TRAILER",
+      "role": "VFX Lead, Compositing",
+      "videoUrl": "https://www.youtube.com/watch?v=8-NXCL_qTuQ",
+      "featured": false,
+      "placeholder": false
+    },
+    {
       "title": "Fuerza Regida - TU SANCHO",
       "role": "Roto",
       "videoUrl": "https://www.youtube.com/watch?v=PXSmPTX-SgM",
       "description": "Nominated for a VMA",
+      "featured": false,
+      "placeholder": false
+    },
+    {
+      "title": "Shotgun Willy - OMG Shawty (W/ TRAQULA)",
+      "role": "Motion graphics, Compositing",
+      "videoUrl": "https://www.youtube.com/watch?v=-TeQQz6hwEc",
       "featured": false,
       "placeholder": false
     },
