@@ -50,6 +50,8 @@
 
 - Naslovi grupa projekata su plavi na sve cetiri stranice. Uklonjene su pratece oznake.
 
+- AI Video se prikazuje samo kada ima radova, a prazne grupe se skrivaju.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
