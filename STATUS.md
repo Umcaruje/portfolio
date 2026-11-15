@@ -58,6 +58,8 @@
 
 - Short-form prikazuje dve kartice u redu na mobilnom.
 
+- Play ikonica na karticama je SVG za isti prikaz na mobilnom i desktopu.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
