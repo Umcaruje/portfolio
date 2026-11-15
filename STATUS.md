@@ -48,6 +48,8 @@
 
 - HTTP i HTTPS linkovi u opisima projekata su klikabilni, uz ocuvane prelome redova.
 
+- Naslovi grupa projekata su plavi na sve cetiri stranice. Uklonjene su pratece oznake.
+
 ## Ostaje
 
 - Pripremiti ostale medije i zameniti ili ukloniti 10 probnih projekata iz cetiri JSON fajla u dist/.
