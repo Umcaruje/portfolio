@@ -88,6 +88,13 @@
       "placeholder": false
     },
     {
+      "title": " Shallipopi - Asap",
+      "role": "Fire simulation, Building bounce VFX",
+      "videoUrl": "https://www.youtube.com/watch?v=Ir7mWbkHu4w",
+      "featured": false,
+      "placeholder": false
+    },
+    {
       "title": " Teodora - Karma",
       "role": "Cleanup",
       "videoUrl": "https://www.youtube.com/watch?v=Sii_S9cWbls",
@@ -119,6 +126,14 @@
       "title": "Biba x Nikolija - 3 Po 3",
       "role": "Key",
       "videoUrl": "https://www.youtube.com/watch?v=JpFzbkxU6WA",
+      "featured": false,
+      "placeholder": false
+    },
+    {
+      "title": "Lima Len - Raketa",
+      "role": "Animation, Motion design",
+      "videoUrl": "https://www.youtube.com/watch?v=nGsn9c-t7OQ",
+      "thumbnail": "assets/Uros Maravic Motion Graphics Reel 2026.00_00_09_06.Still002.png",
       "featured": false,
       "placeholder": false
     },
@@ -209,20 +224,6 @@
       "title": " Trile - CRNA VRANA",
       "role": "Cleanup",
       "videoUrl": "https://www.youtube.com/watch?v=C0U4sa0uKFY",
-      "featured": false,
-      "placeholder": false
-    },
-    {
-      "title": " Shallipopi - Asap",
-      "role": "Fire simulation, Building bounce VFX",
-      "videoUrl": "https://www.youtube.com/watch?v=Ir7mWbkHu4w",
-      "featured": false,
-      "placeholder": false
-    },
-    {
-      "title": "Lima Len - Raketa",
-      "role": "Animation, Motion design",
-      "videoUrl": "https://www.youtube.com/watch?v=nGsn9c-t7OQ",
       "featured": false,
       "placeholder": false
     }
