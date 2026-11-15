@@ -131,6 +131,13 @@
       "placeholder": false
     },
     {
+      "title": " Teodora - 101 ZMIJA feat. Jala Brat",
+      "role": "Cleanup, Beauty",
+      "videoUrl": "https://www.youtube.com/watch?v=8pjgzO-4STw",
+      "featured": false,
+      "placeholder": false
+    },
+    {
       "title": "Lima Len - Raketa",
       "role": "Animation, Motion design",
       "videoUrl": "https://www.youtube.com/watch?v=nGsn9c-t7OQ",
@@ -212,13 +219,6 @@
       "title": " Damir Kedžo - Spojeni Nevidljivo",
       "role": "Fire simulation, Compositing",
       "videoUrl": "https://www.youtube.com/watch?v=wdtreq-dMzk",
-      "featured": false,
-      "placeholder": false
-    },
-    {
-      "title": " Teodora - 101 ZMIJA feat. Jala Brat",
-      "role": "Cleanup, Beauty",
-      "videoUrl": "https://www.youtube.com/watch?v=8pjgzO-4STw",
       "featured": false,
       "placeholder": false
     },
