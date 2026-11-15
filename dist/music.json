@@ -1,35 +1,24 @@
 {
-  "soundcloudEmbedUrl": "",
   "projects": [
     {
+      "title": "Yasserstain - Učenici VS Profesori",
       "id": "music-in-picture",
-      "title": "Music in picture",
       "format": "Composition",
-      "role": "Composition & production",
-      "featured": false,
-      "theme": "dark",
-      "coverText": "SOUND / VISION",
+      "role": "Producer, Mix & Master",
+      "videoUrl": "https://www.youtube.com/watch?v=lO4KSnrb-fc",
       "placeholder": true,
-      "thumbnail": "",
-      "videoUrl": "",
-      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
-      "credits": "",
-      "images": []
+      "coverText": "SOUND / VISION",
+      "theme": "dark"
     },
     {
+      "title": "Yasserstain -  RADIM NA SEBI",
       "id": "production-session",
-      "title": "Production session",
       "format": "Production",
-      "role": "Music production",
-      "featured": false,
-      "theme": "lilac",
-      "coverText": "IN / SESSION",
+      "role": "Producer, Mix & Master",
+      "videoUrl": "https://www.youtube.com/watch?v=v7151t92Eqg",
       "placeholder": true,
-      "thumbnail": "",
-      "videoUrl": "",
-      "description": "This is a layout preview. Replace it with a brief introduction to your project, the creative challenge and your contribution.",
-      "credits": "",
-      "images": []
+      "coverText": "IN / SESSION",
+      "theme": "lilac"
     }
   ]
 }
